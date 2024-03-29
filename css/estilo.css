@@ -1,0 +1,40 @@
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    
+}
+#menu-col1{
+    flex: 30%;
+}
+#menu-col1 h2 a{
+    font-family: "Anta", sans-serif;
+    text-decoration: none;
+    color:#1f2c33;
+}
+#menu-col2{
+    flex: 50%;
+}
+#menu-col3{
+    flex: 20%;
+}
+.menu-navegador li{
+    display: inline;
+    font-family: Inter, sans-serif;
+    padding: 10px;
+    
+}
+.menu-navegador li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #0f0f0f;
+}
+.menu-navegador li a:hover{
+    color: #5a43ef;
+}
+.menu-sesion li{
+    display: inline;
+    padding: 10px;
+}
