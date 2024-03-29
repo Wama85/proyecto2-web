@@ -1,11 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    padding: 50px 80px;
+}
 #menu{
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
+    font-size: 16px;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    padding: 30px 0;
     
 }
+
 #menu-col1{
     flex: 30%;
 }
@@ -15,10 +29,10 @@
     color:#1f2c33;
 }
 #menu-col2{
-    flex: 50%;
+    flex: 40%;
 }
 #menu-col3{
-    flex: 20%;
+    flex: 30%;
 }
 .menu-navegador li{
     display: inline;
@@ -37,4 +51,209 @@
 .menu-sesion li{
     display: inline;
     padding: 10px;
+    color: #5a43ef;
+}
+.menu-sesion .login{
+    color: #0f0f0f;
+    text-decoration: none;
+}
+.menu-sesion .login:hover{
+    color: #5a43ef;
+}
+.menu-sesion li a{
+    text-decoration: none;
+    color: #5a43ef;
+    font-weight: bold;
+}
+.menu-sesion .fondo-bolsa{
+    
+    background-image: url("../img/bolsa-compras.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+}
+main{
+    
+    padding: 50px;
+}
+#contenido-portada{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    
+    
+}
+#cabeceraMain{
+    background-color: #f7fafd;
+}
+
+#contenido-columna1{
+    flex: 30%;
+    padding: 0 30px;
+}
+#contenido-columna1 h1{
+    font-size: 68px;
+    line-height: 68px;
+}
+
+#contenido-columna2{
+    flex: 50%;
+    text-align: center;
+}
+#contenido-columna2 img{
+    width: 70%;
+}
+#detalle-portada{
+    font-size: 24px;
+    font-family: inter, sans-serif;
+    line-height: 28px;
+    vertical-align: baseline;
+    padding:20px 0;
+
+}
+#botones-portada{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+#botones-portada-columna1{
+    flex: 30%;
+    background-color: #6852f4;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+#botones-portada-columna1:hover{
+   cursor: pointer;
+    background-color: #5a43ef;
+}
+#botones-portada-columna2:hover{
+    cursor: pointer;
+    color:#0f0f0f
+}
+
+#botones-portada-columna2{
+    flex: 30%;
+    text-align: center;
+    color: #6852f4;
+    font-weight: bold;
+}
+#contenido-widget{
+    color:rgb(31, 44, 51);
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 4px;
+    line-height: 14px;
+    padding: 60px 0 0 0;
+   
+}
+#elementos-widget{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-size-adjust: 100%;
+    overflow-wrap: break-word;
+    animation: mover 10s alternate;
+    
+   
+}
+@keyframes mover {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(20px); 
+       }
+}
+#elementos-widget img {
+    width: 80%; 
+    height: auto; 
+}
+
+@media (width<1000px){
+    #contenido-portada{
+        flex-direction: column;
+    }
+    #elementos-widget {
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
+    #menu{
+        flex-direction: column;
+    }
+
+    #elementos-widget figure {
+        margin-bottom: 20px; 
+    }
+}
+
+#main-contenido{
+    text-align: center;
+    font-size: 48px;
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+#elementos-iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    text-size-adjust: 100%;
+    padding: 50px 0px;
+}
+#estrellas-contenedor{
+    
+    background-image: url("../img/digital-wp-logo.png");
+    background-size: 40px;
+    background-repeat: no-repeat; 
+    background-position: center left;
+
+   
+}
+#icono-estrella-contenedor{
+    background-image: url("../img/digital-trustpilot-logo.png");
+    background-size: 40px;
+    background-repeat: no-repeat; 
+    background-position: center left;
+}
+.estrellas{
+    padding-left: 45px;
+    
+}
+.estrellas ul li{
+    display: inline;
+    font-size: 24px;
+    align-items: start;
+}
+.estrellas ul li:before {
+    content: "\2605"; 
+    color: gold; 
+}
+#elemento-video{
+    
+    width: 80%;
+    margin:0 auto;
+}
+#elemento-video iframe{
+    border-radius: 10px;
+    display: block;
+}
+#elemento-widget-contenido{
+    font-weight: 600;
+    text-align: center;
+    font-size: 48px;
+    padding: 80px 0 50px 0;
 }
