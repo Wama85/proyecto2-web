@@ -125,6 +125,7 @@ main{
     line-height: 28px;
     vertical-align: baseline;
     padding:20px 0;
+    color: var(--color-texto-caja);
 
 }
 #botones-portada{
@@ -205,10 +206,16 @@ main{
 #elementos-iconos{
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content:center;
     align-items: center;
     text-size-adjust: 100%;
     padding: 50px 0px;
+}
+.elemento-estrella-borde{
+    height: 50px;
+  
+    margin: 0 80px;
+    border-left: var(--borde-caja) 1px solid;
 }
 #estrellas-contenedor{
     
@@ -235,6 +242,7 @@ main{
     align-items: start;
 }
 .estrellas ul li:before {
+    font-family: "Font Awesome 5 Free";
     content: "\2605"; 
     color: gold; 
 }
@@ -600,7 +608,7 @@ footer{
     font-size: 18px;
     font-weight: bold;
 }
-#elemento-compras-website-boton:hover{
+#elemento-compras-website-boton:hover {
     background-color: #1f2c33;
     color: #fdfbfb;
     box-shadow: 8px 8px 8px rgba(71, 71, 71, 0.2);
@@ -621,10 +629,13 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-    align-items: center;
+    align-items:center;
     border-bottom: var(--borde-caja) solid 1px;
     padding-bottom: 40px;
     margin-bottom: 40px;
+    text-align: left;
+    height: 50vh;
+   
 }
 #footer-columna h4{
     color: #0f0f0f;
