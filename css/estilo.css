@@ -14,7 +14,6 @@ body::selection {
     box-sizing: border-box;
 }
 
-
 header{
     width: 100%;
     padding: 50px 80px;
@@ -722,6 +721,9 @@ footer{
     #elemento-elementos-top{
         margin-top: 340px;
        
+    }
+    #elemento-footer{
+        flex-direction: column;
     }
    
 
