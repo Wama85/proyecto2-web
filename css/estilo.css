@@ -727,7 +727,10 @@ footer{
     #elemento-footer{
         flex-direction: column;
     }
-   
+    #footer-autores-redes{
+        display: none;
+    }
+ 
 
     
 }

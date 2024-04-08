@@ -159,6 +159,22 @@
 footer{
     background-color: #ffffff;
 }
+.color-parrafo{
+    color:#6d6e6e;
+}
+.color-titulo{
+    color: rgb(31, 44, 51);
+}
+.fondo-gris{
+    background-color:#f7fafd;
+}
+.contenido-revisar-carrito{
+    padding: 50px;
+   
+}
+.borde-abajo{
+    border-bottom: 1px solid #dadddd;
+}
 @media (width<1000px){
     .elemento-lista-ventas{
         flex-direction: column;
