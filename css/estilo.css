@@ -687,9 +687,12 @@ footer{
     }
 
     #elementos-widget figure {
-        margin-bottom: 20px; 
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
     }
     #elemento-widget-caja-contenido{
+       
         flex-direction: column;
     }
     #elementos-temas-cabecera{
@@ -707,6 +710,25 @@ footer{
     #elemento-elemento-fondo{
         flex-direction: column;
        
+    }
+    #elemento-lista-ventas{
+        flex-direction: column; 
+        padding: 5px;  
+    }
+    #lista-ventas{
+        padding-top: 5px;
+      
+         padding-bottom: 15px;
+    }
+    #elemento-top-imagen-detalle{
+        display: none;
+
+    }
+    #elemento-compras-website-boton {
+        display: none;
+    }   
+    #elementos-temas-cabecera{
+        width: 80%;
     }
   
     #elemento-imagen-icono-detalle{

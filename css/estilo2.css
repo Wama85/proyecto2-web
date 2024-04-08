@@ -45,7 +45,7 @@
 }
 
 .elemento-flex-titulo{
-    width: 100%;
+    width: 80%;
 }
 .elemento-flex-titulo h1{
     font-size:38px;  
@@ -176,16 +176,39 @@ footer{
     border-bottom: 1px solid #dadddd;
 }
 @media (width<1000px){
+    #fondo-acerca{
+        width: 100%;
+    }
     .elemento-lista-ventas{
         flex-direction: column;
+    }
+    .acerca-elemento-titulo-flex{
+        
+        flex-direction: column;
+        width: 80%;
+        text-align: center;
+    }
+    .elemento-flex-titulo{
+        width: 80%;
     }
     .lista-ventas{
         border-right: none;
         border-bottom: solid 1px rgb(231, 236, 238);
         padding-bottom: 20px;
     }
+    .elemento-titulo-imagenes-acerca{
+        width: 50%;
+        text-align: center;
+    }
+    .elemento-sinfondo{
+       
+       
+        text-align: center;
+
+    }
     .elemento-galeria-imagen{
         flex-direction: column;
         align-items: center;
     }
+  
 }
