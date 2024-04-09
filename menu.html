@@ -5,18 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú Responsive</title>
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <nav>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle">&#9776;</label>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+        <div id="menu">
+            <input type="checkbox" id="check">
+            <label class="menu-toggle" for="menu-toggle">&#9776;</label>
+            <div id="menu-col1">
+          <h2><a href="index.html">WA-VIAJES</a></h2>
+            </div>
+            <div id="menu-col2">
+                <ul class="menu-navegador">
+                    <li><a href="temas.html" target="_parent">Temas</a></li>
+                    <li><a href="complementos.html" target="_parent"> Complementos</a></li>
+                    <li><a href="acerca.html" target="_parent">Acerca de</a> </li>
+                    <li><a href="contacto.html" target="_parent">Contacto</a></li>
+                </ul>
+            </div>
+            <div id="menu-col3">
+                <ul class="menu-sesion">
+                    <li><a class="login" href="https://websitedemos.net/digital-download-store-02/wp-login.php?redirect_to=https%3A%2F%2Fwebsitedemos.net%2Fdigital-download-store-02" target="_blank">Iniciar Sesion</a></li>
+                    <li><a href="checkout.html">$0.00</a></li>
+                    <li class="fondo-bolsa">0</li>
+                </ul>
+
+            </div>
+           
+        </div>
+      </nav>
+    </header>
     <div class="content">
         <!-- Aquí va el contenido de tu página -->
     </div>

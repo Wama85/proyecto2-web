@@ -1,54 +1,103 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-#menu-navegador ul {
+header {
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
-#menu-navegador li {
-    display: inline-block;
-}
-
-#menu-navegador a {
-    display: block;
-    padding: 15px;
+a {
+    color: white;
     text-decoration: none;
-    color: inherit;
 }
 
-#menu label {
-    display: none;
-}
-
-#menu label {
+.menu-toggle {
     font-size: 30px;
+    color: #ffffff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
     cursor: pointer;
-    padding: 15px;
     display: none;
 }
 
-@media (max-width: 968px) {
-    #menu label {
-        display: block; 
+#check {
+    display: none;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media only screen and (max-width: 1000px) {
+    .menu-toggle,
+    #check {
+        display: block;
+        position: absolute;
+        color: #030303;
     }
-    #menu-col2{
-        display: none;
-    }
-    #menu-col3{
-        display: none;
+    #check {
+       opacity: 0;
     }
 
-    #menu-col2 ul li {
-        display: block;
-        text-align: center;
+    .menu-toggle {
+        top: 20px;
+        right: 20px;
+        font-size: 26px;
+        cursor: pointer;
+        margin-bottom: 10px;
     }
-    #menu-toggle:checked ~#menu-col2{
-        display: block;
-       cursor: pointer;
+
+    #check {
+        top: 60px;
+        right: 60px;
+        border: none;
+        z-index: 10;
+    }
+
+    #menu-col2 {
+        position: fixed;
         width: 100%;
-        background-color: #f7fafd;
-        position: absolute;
-        top: 0;
-        left: 10px;
+        background-color: #c7c4c4;
+        top: 80px;
+        left: -100%;
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    #check:checked ~ #menu-col2 {
+        display: block;
+        left: 0;
+    }
+
+    .menu-navegador  {
+        margin: 50px 0;
+        line-height: 30px;
+        display: flex;
+        flex-direction: column;
+        transition: all .5s;
+    }
+
+    .menu-navegador li a {
+        font-size: 20px;
+    }
+
+    #menu-col3 {
+        display: none;
     }
 }

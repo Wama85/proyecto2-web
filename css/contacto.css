@@ -82,7 +82,7 @@ button{
 button:hover{
     opacity: 90%;
 }
-label:after{
+.label:after{
     content: " *";
     color: red;
 }
@@ -140,5 +140,9 @@ label:after{
     .fondo-preguntas-frecuentes-caja-detalle{
         margin: 0;
         padding: 0;
+    }
+    .boton{
+        width: 100%;
+        
     }
 }
