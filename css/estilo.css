@@ -4,9 +4,9 @@
     --fondo-elemento:#f5f5f5;
     --color-texto-caja:rgb(31, 44, 51)
 }
-html::selection,
-body::selection {
+::selection {
     background-color: var(--color-navegacion); 
+    color: white;
 }
 
 *{
@@ -293,6 +293,7 @@ main{
 }
 #elemento-caja-icono-detalle:hover{
     background-color: #ffffff;
+    transition: 0.6s;
     border: var(--color-navegacion) solid 1px;
     box-shadow: 8px 8px 8px rgba(71, 71, 71, 0.2);
 }
@@ -560,11 +561,12 @@ footer{
     padding: 20px;
     margin: 20px;
     background-color: #ffffff;
-    transition: 0.4s;
+    transition: 0.6s;
 }
 #elemento-documentacion-icono-detalle:hover{
     background-color: #ffffff;
     border: var(--color-navegacion) solid 1px;
+    transition: 0.6s;
     box-shadow: 8px 8px 8px rgba(71, 71, 71, 0.2);
     
 }
@@ -590,7 +592,7 @@ footer{
 #elemento-compras-website{
     background-image: url("../img/image-background.svg");
     background-color: var(--color-navegacion);
-    height: 50vh;
+    height: 60vh;
 }
 #elemento-compras-website-titulo{
     padding-top: 40px;
@@ -728,6 +730,10 @@ footer{
     #elemento-compras-website-boton {
         display: none;
     }   
+    #elemento-compras-website-titulo{
+        width: 100%;
+        margin: 0 auto;
+    }
     #elementos-temas-cabecera{
         width: 80%;
     }
